@@ -1,4 +1,21 @@
-img{
+.container {
+    display: inline-block;
+    position: relative;
+    margin-left: auto;
+  margin-right: auto;
+}
+.container .text {
+    z-index: 1;
+    position: absolute;
+    text-align: left;
+    margin: 0 auto;
+    left: 300px;
+    right: 0;
+    top: 30%;
+    width: 700px;
+}
+
+nav img{
   width: 100px;
 }
 
@@ -8,6 +25,45 @@ figure img{
 
 figure{
   max-width: 400px;
+}
+
+#menu img{
+  width: 30px;
+}
+
+#menu {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 70px;
+    height: 100%;
+    margin: 0 0 0 0;
+    text-align: center;
+    background-color: #d3b8a3;
+  	z-index: 2;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    font-size: 0.8em;
+  }
+
+
+#menu li {
+    margin: 0;
+    padding: 20px;
+    padding-top: 60px;
+    vertical-align: middle;
+  }
+
+#menu a {
+    text-decoration: none;
+	   color: inherit;
+  }
+
+nav {
+  text-align: center;
+}
+h4 {
+  text-align: center;
 }
 
 a:link, a:visited, a:hover, a:focus, a:active{
