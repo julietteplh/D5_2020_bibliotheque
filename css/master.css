@@ -1,18 +1,41 @@
+body{
+  padding-left: 70px;
+}
+
 .container {
-    display: inline-block;
     position: relative;
     margin-left: auto;
-  margin-right: auto;
+    margin-right: auto;
+    max-width: 960px;
 }
 .container .text {
-    z-index: 1;
     position: absolute;
-    text-align: left;
-    margin: 0 auto;
-    left: 300px;
-    right: 0;
-    top: 30%;
-    width: 700px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 35%;
+}
+
+.container::before {
+    background-image: url('/SVG/trait.svg');
+    background-size: 500px 500px;
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    content:"";
+    position: absolute;
+    top: 27%;
+    left: 35%;
+}
+.container::after {
+    background-image: url('/SVG/livre.svg');
+    background-size: 200px 200px;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    content:"";
+    position: absolute;
+    top: 75%;
+    left: 3%;
 }
 
 nav img{
@@ -25,6 +48,93 @@ figure img{
 
 figure{
   max-width: 400px;
+}
+
+nav {
+  text-align: center;
+}
+h4 {
+  text-align: center;
+}
+
+nav a:link, nav a:visited, nav a:hover, nav a:focus, nav a:active{
+  color: #93725e;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+nav ol, nav ul {
+    list-style: none;
+}
+nav li {
+    display: inline-block;
+    padding: 20px 0 20px;
+    vertical-align: middle;
+}
+
+nav a {
+    text-decoration: none;
+    transition: color 0.1s, background-color 0.1s;
+}
+nav a {
+    position: relative;
+    display: block;
+    padding: 16px 0;
+    margin: 0 12px;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
+    color: #93725e;
+}
+nav a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #93725e;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color 0.1s,transform 0.2s ease-out;
+}
+nav a:active::before {
+    background-color: #93725e;
+}
+nav a:hover::before, a:focus::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+}
+
+section{
+  padding: 70px;
+  padding-left: 35%;
+}
+
+.sectionblack{
+  background-color: #110f0f;
+  color: #93725e;
+}
+
+.section-content{
+  display: flex;
+}
+
+.section-content h2{
+  padding-right: 50px;
+}
+
+.ligne{
+  background-color: #93725e;
+  width: 60%;
+  height: 10px;
+  margin-left: 10%;
 }
 
 #menu img{
@@ -48,85 +158,58 @@ figure{
 
 
 #menu li {
-    margin: 0;
-    padding: 20px;
-    padding-top: 60px;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 20px 10px 20px;
     vertical-align: middle;
   }
 
 #menu a {
     text-decoration: none;
-	   color: inherit;
-  }
-
-nav {
-  text-align: center;
-}
-h4 {
-  text-align: center;
-}
-
-a:link, a:visited, a:hover, a:focus, a:active{
-  color: #93725e;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
-
-ol, ul {
-    list-style: none;
-}
-li {
-    display: inline-block;
-    padding: 20px 0 20px;
-    vertical-align: middle;
-}
-
-a {
-    text-decoration: none;
-    transition: color 0.1s, background-color 0.1s;
-}
-a {
+	  color: inherit;
     position: relative;
     display: block;
-    padding: 16px 0;
-    margin: 0 12px;
-    letter-spacing: 1px;
-    font-size: 12px;
-    line-height: 16px;
-    font-weight: 900;
-    text-transform: uppercase;
-    transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
-    color: #93725e;
-}
-a::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 3px;
-    left: 0;
-    height: 2px;
-    width: 100%;
-    background-color: #93725e;
-    transform-origin: right top;
-    transform: scale(0, 1);
-    transition: color 0.1s,transform 0.2s ease-out;
-}
-a:active::before {
-    background-color: #93725e;
-}
-a:hover::before, a:focus::before {
-    transform-origin: left top;
-    transform: scale(1, 1);
+  }
+
+
+.sidenav {
+  font-family: "MADE Mirage Black PERSONAL USE";
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #d3b8a3;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
 }
 
-#section{
-  padding: 70px;
-  padding-left: 500px;
-}
-
-.sectionblack{
-  background-color: #110f0f;
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
   color: #93725e;
+  display: block;
+  transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+  color: #ecdcd2;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
