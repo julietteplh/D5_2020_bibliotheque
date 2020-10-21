@@ -1,0 +1,66 @@
+@font-face {
+	font-family: "CormorantGaramond-SemiBold";
+	src: url('/fonts/CormorantGaramond-SemiBold.ttf');
+}
+@font-face {
+	font-family: "MADE Mirage Black PERSONAL USE";
+	src: url('/fonts/MADE Mirage Black PERSONAL USE.otf');
+}
+@font-face {
+	font-family: "MyriadPro-Regular";
+	src: url('/fonts/MyriadPro-Regular.otf');
+}
+@font-face {
+	font-family: "Carneys Gallery Script";
+	src: url('/fonts/Carneys Gallery Script.otf');
+}
+
+
+html {font-size: 100%;} /*16px*/
+
+body {
+  background-color: #ecdcd2;
+  font-family: "MyriadPro-Regular";
+  font-weight: 400;
+  line-height: 1.65;
+  color: #93725e;
+}
+
+p {margin-bottom: 1.15rem;}
+
+h1 {
+	font-family: "MADE Mirage Black PERSONAL USE";
+	font-style: normal;
+}
+
+h2 {
+	font-family: "MADE Mirage Black PERSONAL USE";
+	font-style: normal;
+}
+
+h3 {
+	font-family: "CormorantGaramond-SemiBold";
+	font-style: normal;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 2.75rem 0 1.05rem;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052em;
+}
+
+h2 {font-size: 1.953em;}
+
+h3 {font-size: 1.563em;}
+
+h4 {font-size: 1.563em;}
+
+h5 {font-size: 1.25em;}
+
+small, .text_small {font-size: 0.8em;}
