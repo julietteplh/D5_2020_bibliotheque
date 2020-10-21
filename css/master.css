@@ -16,7 +16,7 @@ body{
 }
 
 .container::before {
-    background-image: url('/SVG/trait.svg');
+    background-image: url('svg/trait.svg');
     background-size: 500px 500px;
     display: inline-block;
     width: 500px;
@@ -27,7 +27,7 @@ body{
     left: 35%;
 }
 .container::after {
-    background-image: url('/SVG/livre.svg');
+    background-image: url('svg/livre.svg');
     background-size: 200px 200px;
     display: inline-block;
     width: 200px;
@@ -132,7 +132,7 @@ section{
 }
 
 #annecdote::before {
-    background-image: url('/SVG/soleil.svg');
+    background-image: url('svg/soleil.svg');
     background-size: 150px 150px;
     display: inline-block;
     width: 150px;
@@ -148,7 +148,7 @@ section{
 }
 
 #einstein::before {
-    background-image: url('/SVG/pot.svg');
+    background-image: url('svg/pot.svg');
     background-size: 150px 150px;
     display: inline-block;
     width: 150px;
@@ -159,7 +159,7 @@ section{
 }
 
 #fusee::before {
-    background-image: url('/SVG/fusee.svg');
+    background-image: url('svg/fusee.svg');
     background-size: 300px 300px;
     display: inline-block;
     width: 300px;
@@ -170,7 +170,7 @@ section{
 }
 
 #calcul::before {
-    background-image: url('/SVG/calcul.svg');
+    background-image: url('svg/calcul.svg');
     background-size: 170px 170px;
     display: inline-block;
     width: 170px;
@@ -181,7 +181,7 @@ section{
 }
 
 #smile::before {
-    background-image: url('/SVG/smile.svg');
+    background-image: url('svg/smile.svg');
     background-size: 100px 100px;
     display: inline-block;
     width: 100px;
@@ -192,7 +192,7 @@ section{
 }
 
 #globe::before {
-    background-image: url('/SVG/globe.svg');
+    background-image: url('svg/globe.svg');
     background-size: 150px 150px;
     display: inline-block;
     width: 150px;
@@ -203,7 +203,7 @@ section{
 }
 
 #lampe::before {
-    background-image: url('/SVG/lampe.svg');
+    background-image: url('svg/lampe.svg');
     background-size: 100px 100px;
     display: inline-block;
     width: 100px;
@@ -214,7 +214,7 @@ section{
 }
 
 #reve::before {
-    background-image: url('/SVG/reve.svg');
+    background-image: url('svg/reve.svg');
     background-size: 120px 120px;
     display: inline-block;
     width: 120px;
@@ -225,7 +225,7 @@ section{
 }
 
 #stylo::before {
-    background-image: url('/SVG/stylo.svg');
+    background-image: url('svg/stylo.svg');
     background-size: 120px 120px;
     display: inline-block;
     width: 120px;
@@ -236,7 +236,7 @@ section{
 }
 
 #fleur::before {
-    background-image: url('/SVG/fleur.svg');
+    background-image: url('svg/fleur.svg');
     background-size: 120px 120px;
     display: inline-block;
     width: 120px;
@@ -247,7 +247,7 @@ section{
 }
 
 #avion::before {
-    background-image: url('/SVG/avion.svg');
+    background-image: url('svg/avion.svg');
     background-size: 200px 200px;
     display: inline-block;
     width: 200px;
